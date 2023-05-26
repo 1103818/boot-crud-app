@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/todos")
 public class TodoController {
-    TodoRepository todoRepository;
+    private final TodoRepository todoRepository;
 
     public TodoController(TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
